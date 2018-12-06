@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/onetrack">
+
+    <ImageView
+        android:id="@+id/song_avatar"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:src="@drawable/place_holder"
+        />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:flexDirection="column">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="voice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/executor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="unknown"
+            android:id="@+id/titlesong"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_vert" />
+
+</com.google.android.flexbox.FlexboxLayout>
+

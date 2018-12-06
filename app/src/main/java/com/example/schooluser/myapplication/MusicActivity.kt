@@ -12,9 +12,15 @@ class MusicActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_music)
-        val path = intent.getStringExtra("path")
+        //получили из другого активити путь до файла
+        val path = intent.getStringExtra("FilePath")
+        //получили из другого активити название этого файла
+        val title = intent.getStringExtra("title")
+        //создали плеер
         val player = MediaPlayer()
+        //поместили в этот плеер путь который получили сверху
         player.setDataSource(path)
+       //запустили плеер,музыку играет
         player.prepare()
         var playing = false
         play.setOnClickListener {
